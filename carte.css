@@ -1,0 +1,96 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #ff4655;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Grille des cartes */
+.maps-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+/* Carte de chaque map */
+.map-card {
+    background-color: #252525;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #ff4655;
+}
+
+/* Style des miniatures */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.gallery img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border: 2px solid #ff4655;
+}
+
+/* Map Info */
+.map-info {
+    padding: 15px;
+}
+
+.map-info h2 {
+    margin-top: 10px;
+    color: #ff4655;
+}
+
+.map-info p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+    color: #ccc;
+    font-size: 0.9em;
+}

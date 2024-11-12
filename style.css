@@ -1,0 +1,190 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;  /* Choix de la couleur de fond globale */
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Header fixe */
+header {
+    background-color: rgb(46, 46, 46);
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Espace sous le header pour éviter qu'il cache le contenu */
+main {
+    padding-top: 80px; /* Ajustez pour compenser la hauteur du header */
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* Navigation principale */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    right: 30px;
+    margin-left: 10px;
+}
+
+/* Style des liens de navigation */
+nav a {
+    color: #fefefe;
+    text-decoration: none;
+    padding: 15px 20px; /* Ajustement des padding pour une meilleure lisibilité */
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+/* Styles du menu déroulant */
+.dropdown .dropbtn {
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Contenu du menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Affichage du menu déroulant au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive : Navigation sur mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+    }
+}
+
+/* Grille des personnages */
+.characters-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+}
+
+/* Carte de chaque personnage */
+.character-card {
+    background-color: #252525;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff4655;
+}
+
+.character-info {
+    padding: 15px;
+}
+
+.character-info h2 {
+    margin-top: 10px;
+    color: #ff4655;
+}
+
+.character-info p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.character-info h3 {
+    font-size: 1em;
+    margin-top: 15px;
+    color: #ff4655;
+}
+
+.character-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    color: #ccc;
+}
+
+.character-info ul li {
+    font-size: 0.9em;
+    padding: 2px 0;
+}
+.character-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+/* Footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+    color: #ccc; 
+    font-size: 0.9em;
+}

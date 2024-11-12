@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes de Valorant</title>
+    <link rel="stylesheet" href="carte.css">
+</head>
+<body>
+
+<header>
+    <header>
+        <img src="#" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <a href="index.html">Accueil</a></li>
+                <li><a href="personnage.html">Personnage</a></li>
+                <li><a href="carte.html">Carte</a></li>  
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="service1.html">Service 1</a>
+                        <a href="service2.html">Service 2</a>
+                        <a href="service3.html">Service 3</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <h1>Cartes de Valorant</h1>
+    <p>Découvrez les différentes cartes de Valorant et leurs caractéristiques.</p>
+</header>
+
+<main>
+    <section class="maps-grid">
+        <!-- Carte de map avec une image principale et des miniatures -->
+        <div class="map-card">
+            <img src="Maps/Sunsetmaps.avif" alt="Sunset" class="main-image" id="main-image-sunset">
+            <div class="map-info">
+                <h2>Sunset</h2>
+                <p>Une carte unique sans mid, mais avec deux téléporteurs pour des rotations rapides.</p>
+            </div>
+            <!-- Galerie de miniatures -->
+            <div class="gallery">
+                <img src="Maps/Sunsetmaps.avif" alt="bind1" onclick="changeMainImage('Maps/Sunsetmaps.avif', 'main-image-sunset')">
+                <img src="Maps/Sunset.webp" alt="bind1" onclick="changeMainImage('Maps/Sunset.webp', 'main-image-sunset')">
+                <img src="Maps/Sunset1.webp" alt="bind1" onclick="changeMainImage('Maps/Sunset1.webp', 'main-image-sunset')">
+                <img src="Maps/Sunset2.webp" alt="Bind Image 2" onclick="changeMainImage('Maps/Sunset2.webp', 'main-image-sunset')">
+                <img src="Maps/Sunset3.webp" alt="Bind Image 3" onclick="changeMainImage('Maps/Sunset3.webp', 'main-image-sunset')">
+                <img src="Maps/Sunset4.webp" alt="Bind Image 3" onclick="changeMainImage('Maps/Sunset4.webp', 'main-image-sunset')">
+            </div>
+        </div>
+
+        <!-- Exemple pour une autre carte de map avec image principale et miniatures -->
+        <div class="map-card">
+            <img src="haven.jpg" alt="Haven" class="main-image" id="main-image-haven">
+            <div class="map-info">
+                <h2>Haven</h2>
+                <p>Carte à trois sites (A, B, C) permettant des stratégies variées et une défense diversifiée.</p>
+            </div>
+            <!-- Galerie de miniatures -->
+            <div class="gallery">
+                <img src="haven1.jpg" alt="Haven Image 1" onclick="changeMainImage('haven1.jpg', 'main-image-haven')">
+                <img src="haven2.jpg" alt="Haven Image 2" onclick="changeMainImage('haven2.jpg', 'main-image-haven')">
+                <img src="haven3.jpg" alt="Haven Image 3" onclick="changeMainImage('haven3.jpg', 'main-image-haven')">
+            </div>
+        </div>
+
+        <!-- Ajoutez d'autres cartes de map de la même manière -->
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Valorant. Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
