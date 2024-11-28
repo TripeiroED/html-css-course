@@ -1,0 +1,151 @@
+/* Espace sous le header */
+main {
+    padding-top: 80px; /* Ajuste l'espace sous le header */
+}
+
+/* Section image avec cadre */
+.image-frame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Image floutée en arrière-plan */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Assurez-vous que l'arrière-plan occupe toute la largeur */
+    height: 50%; /* L'image floutée occupe la moitié supérieure */
+    background-image: url('Guide/photo-top.webp'); /* Utilisez votre image de fond */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Floutage de l'image */
+    z-index: -1; /* Placer l'image en arrière-plan */
+}
+
+/* Contenu de l'image principale */
+.image-container {
+    width: 100%; /* Largeur de l'image par rapport à la section */
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative; /* Pour la placer au-dessus de l'arrière-plan */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0; /* Supprime les coins arrondis */
+    border: none; /* Assurez-vous qu'aucun cadre n'est ajouté */
+}
+
+
+/* Titre sous l'image */
+h2 {
+    font-size: 2em;
+    color: #ff4655;
+    font-weight: bold;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #000000;
+}
+
+p1 {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+.content p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #000000;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px ;
+}
+
+.video-container {
+    margin: 30px auto; /* Centre automatiquement horizontalement */
+    max-width: 2000px; /* Augmente la largeur maximale pour grands écrans */
+    width: 100%; 
+    text-align: center;
+    position: relative;
+    left: -20%;
+}
+
+.video-container iframe {
+    width: 150%; /* Vidéo utilise toute la largeur disponible du conteneur */
+    height: 700px; /* Hauteur plus grande pour mieux occuper l'espace */
+    border-radius: 00px; /* Coins arrondis (optionnel) */
+}
+
+.video-container2 {
+    margin: 30px auto; /* Centre automatiquement horizontalement */
+    max-width: 2000px; /* Augmente la largeur maximale pour grands écrans */
+    width: 100%; 
+    text-align: center;
+    position: relative;
+    left: -20%;
+}
+
+.video-container2 iframe {
+    width: 150%; /* Vidéo utilise toute la largeur disponible du conteneur */
+    height: 7000px; /* Hauteur plus grande pour mieux occuper l'espace */
+    border-radius: 00px; /* Coins arrondis (optionnel) */
+}
+
+
+.photo-container img {
+    margin: 30px auto; /* Centre automatiquement horizontalement */
+    max-width: 2000px; /* Augmente la largeur maximale pour grands écrans */
+    width: 100%; 
+    text-align: center;
+    position: relative;
+    right: -20%;
+}
+
+.photo2-container img {
+    margin: 30px auto; /* Centre automatiquement horizontalement */
+    max-width: 2000px; /* Augmente la largeur maximale pour grands écrans */
+    width: 100%; 
+    text-align: center;
+    position: relative;
+}
+
+
+/* Sections */
+.section {
+    margin: 0px auto;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 0px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ff4655;
+    font-weight: bold;
+    margin-left: 400px;
+    margin-right: 400px ;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1rem;
+    justify-content: center;
+}

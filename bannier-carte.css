@@ -1,0 +1,63 @@
+/* Style pour la bannière */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255)), #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    gap: 20px;
+}
+
+.banner-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.banner-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 25px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff4655;
+    text-decoration: none;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #1e1617;
+}
+
+.banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

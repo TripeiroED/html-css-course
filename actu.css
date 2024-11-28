@@ -1,0 +1,96 @@
+/* Section des actualités */
+.actualites {
+    background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ece1d7a8a15c7f55cb3a09a8aca0fd5d5d93c9ac-5120x1140.png?auto=format&fit=fill&q=80&w=1899');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px; /* Ajoute de l'espace autour du contenu */
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Organiser le contenu en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
+    justify-content: flex-start; /* Aligner les éléments en haut */
+    height: auto; /* La section peut s'ajuster à la taille du contenu */
+}
+
+/* Conteneur pour le titre et la description */
+.header-content {
+    text-align: center; /* Centre le titre */
+    margin-bottom: 30px; /* Espace sous le titre */
+}
+
+.actualites h2 {
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Section de description (facultatif si vous voulez ajouter une description sous le titre) */
+.section-description {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+/* Grille des cartes d'actualités */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Carte d'actualité */
+.news-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px); /* Effet au survol */
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenu de la carte */
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 1.5em;
+    color: #ff4655;
+    margin: 0 0 10px;
+}
+
+.news-content p {
+    font-size: 1em;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+/* Bouton "En savoir plus" */
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4655;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #ff6577;
+}

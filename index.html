@@ -4,30 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Site</title>
+    <link rel="stylesheet" href="videodebut.css">
+    <link rel="stylesheet" href="texte-video.css">
+    <link rel="stylesheet" href="actu.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="bannier-carte.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Valorant</title>
 </head>
 <body>
     <header>
-        <img src="#" alt="Logo" class="logo">
+        <img src="photo/RiotGAmes.jpg" alt="Logo" class="logo">
         <nav>
             <ul>
                 <a href="index.html">Accueil</a></li>
-                <li><a href="personnage.html">Personnage</a></li>
-                <li><a href="carte.html">Carte</a></li>  
+                <li><a href="agent.html">Agents</a></li>
+                <li><a href="carte.html">Carte</a></li>
+                <li><a href="Arsenal.html">Arsenal</a></li>  
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Services</a>
+                    <a span class="dropbtn">Support</a>
                     <div class="dropdown-content">
-                        <a href="service1.html">Service 1</a>
-                        <a href="service2.html">Service 2</a>
-                        <a href="service3.html">Service 3</a>
+                        <a href="configuration.html">Configuration</a>
+                        <a href="https://support-valorant.riotgames.com/hc/fr/" target="_blank">Support</a>
+                        <a href="charte.html">Charte de la sécurité</a>
                     </div>
                 </li>
-                <li><a href="contact.html">Contact</a></li>   
             </ul>
         </nav>
     </header>
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/409ab2fc369ba5e1fe50bac10c6676d7d1365a9f.mp4" type="video/mp4">
+        </video>    
+        <div class="content-overlay">
+            <h1>Valorant</h1>
+            <p>Un jeu de tir tactique avec personnages en 5c5</p>    
+            <button onclick="window.location.href='#'">Jouer Gratuitement</button>
+        </div>
+    </div>
+
+    <section class="actualites">
+        <!-- Conteneur pour le titre et la description -->
+        <div class="header-content">
+            <h2>DERNIÈRES ACTUS</h2>
+        </div>
+        
+        <!-- Grille des cartes d'actualités -->
+        <div class="news-grid">
+            <!-- Carte d'actualité -->
+            <div class="news-card">
+                <img src="actu/1.webp" alt="Actualité 1">
+                <div class="news-content">
+                    <h3>JUSTE UNE DERNIÈRE // Ép. 9 : acte III</h3>
+                    <p>Nouvelles collections de skins, patchs de fin d'année et bien plus dans le dernier acte de COLLISION</p>
+                    <a href="https://www.youtube.com/watch?v=fVDy0cqoECs" target="_blank" class="read-more">En savoir plus</a>
+                </div>
+            </div>
     
+            <!-- Autre carte d'actualité -->
+            <div class="news-card">
+                <img src="actu/2.webp" alt="Actualité 2">
+                <div class="news-content">
+                    <h3>Présentation du gameplay de Vyse</h3>
+                    <p>Voyez la génie tacticienne Vyse en action avant son arrivée dans l'épisode 09 : acte II.</p>
+                    <a href="https://www.youtube.com/watch?v=CuJNkKusu7s" target="_blank" class="read-more">En savoir plus</a>
+                </div>
+            </div>
     
-    <footer>rgrgrgrgrhth</footer>
+            <!-- Autres cartes d'actualité -->
+            <div class="news-card">
+                <img src="actu/3.webp" alt="Actualité 3">
+                <div class="news-content">
+                    <h3>Notes de patch 9.08 de VALORANT</h3>
+                    <p>Des mises à jour pour Yoru, Gekko et Sunset. Nouveau : carte Glitch en CMÉ.</p>
+                    <a href="https://www.youtube.com/watch?v=fVDy0cqoECs" target="_blank" class="read-more">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="hero-section">
+        <div class="content">
+            <h1>COLLISION</h1>
+            <p>ÉPISODE_09 // ACTE III / AN 4</p>
+            <a href="jouer.html" target="_blank" class="cta-button">JOUEZ MAINTENANT</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Texte à gauche -->
+        <div class="text-wrapper">
+            <h1>NOUS SOMMES VALORANT</h1>
+            <h2>REPOUSSEZ LES LIMITES :</h2>
+            <p>Prouvez la supériorité de votre expérience avec style dans une compétition mondiale. Alternez les phases d'attaque et de défense, et remportez 13 manches à l'aide de mécaniques de tir précises et de compétences tactiques. Avec une seule vie par manche, vous devrez réfléchir plus vite que votre adversaire pour survivre. Affrontez d'autres joueurs dans les modes Compétition et Non classé, mais aussi en Combat à mort et Spike Rush.</p>
+            <button onclick="window.location.href='Guide.html'">APPRENDRE À JOUER</button>
+        </div>
+    
+        <!-- Vidéo à droite -->
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline class="video">
+                <source src="Vidéo/Video1.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas les vidéos HTML5.
+            </video>
+        </div>
+    </div>
+
+    <div class="container2">
+        <!-- Texte à droite -->
+        <div class="text-wrapper-right">
+            <h1>VOS AGENTS</h1>
+            <p>En plus de vos armes, vous devez choisir un agent dont les compétences aussi polyvalentes que mortelles vous aident à briller dans diverses situations. Chaque agent est unique, comme le seront tous vos meilleurs moments.</p>
+            <button onclick="window.location.href='agent.html'">VOIR TOUS LES AGENTS</button>
+        </div>
+    
+        <!-- Image à gauche -->
+        <div class="image-wrapper-left">
+            <img src="photo/AGENTS.webp" alt="Mise à jour Valorant" class="image">
+        </div>
+    </div>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>VOS CARTES</h1>
+            <h2>COMBATTEZ AUX QUATRE COINS DU MONDE</h2>
+            <p>
+                Chaque carte vous permet de faire la démonstration de votre génie créatif. Elles ont toutes été créées pour favoriser les stratégies d'équipe, les actions spectaculaires et les moments de tension. Réussissez l'exploit que tous voudront reproduire dans les années à venir !
+            </p>
+            <a href="carte.html" class="button">VOIR TOUTES LES CARTES</a>
+        </div>
+        <div class="banner-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/65c45804e00ee97977b6eef06da370543968d161-1232x1232.png?auto=format&fit=fill&q=80&w=849" alt="Cartes Valorant">
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div> 
+        <p>&copy; 2023 Valorant. Tous droits réservés.</p>
+    </footer>
+
 </body>
 </html>

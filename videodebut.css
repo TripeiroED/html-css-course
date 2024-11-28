@@ -1,0 +1,56 @@
+/* Conteneur de la vidéo */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Vidéo pleine hauteur */
+    overflow: hidden;
+}
+
+/* Vidéo en arrière-plan */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La vidéo couvre tout le conteneur */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Place la vidéo en arrière-plan */
+}
+
+/* Contenu superposé à la vidéo */
+.content-overlay {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    z-index: 1; /* Assure que le texte est au-dessus de la vidéo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-overlay h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.content-overlay p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Bouton */
+.content-overlay button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #ff4655;
+    border: 2px solid #ffffff; /* Bordure blanche autour du bouton */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content-overlay button:hover {
+    background-color: #ff6577;

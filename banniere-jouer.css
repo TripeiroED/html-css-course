@@ -1,0 +1,113 @@
+/* Bannière Console */
+.console-banner {
+    margin-top: 90px;
+    background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/cc341b8c8d6adead81123bcd5297f839a5388d36-1756x808.webp?auto=format&fit=fill&q=80&w=1756'); /* Image de fond */
+    background-size: cover; /* L'image remplit tout l'espace */
+    background-position: center; /* Centre l'image de fond */
+    height: 700px; /* Hauteur de la bannière */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    position: relative;
+    color: #fff;
+}
+
+/* Contenu de la bannière */
+.console-content {
+    display: flex;
+    align-items: center; /* Aligne les éléments verticalement */
+    justify-content: space-between; /* Place le texte à gauche et l'image à droite */
+    max-width: 1200px; /* Largeur maximale du contenu */
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 20px;
+    gap: 20px; /* Espace entre le texte et l'image */
+}
+
+/* Texte à gauche */
+.text-content {
+    flex: 4; /* Prend 1 part de l'espace */
+    max-width: 800px; /* Largeur maximale */
+    padding-right: 20px;
+}
+
+.text-content h1 {
+    font-size: 3.5em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #ffffff; 
+    word-wrap: break-word;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    color: #ffffff; 
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 25px 30px;
+    background-color: #242122; 
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffffff; 
+    color: black;
+}
+
+.cta1-button {
+    display: inline-block;
+    padding: 25px 30px;
+    background-color: #f5e8e8; 
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+}
+
+.cta1-button:hover {
+    background-color: #000000; 
+    color: rgb(255, 255, 255);
+}
+
+
+/* Image à droite */
+.image-content {
+    flex: 1; /* Prend 1 part de l'espace */
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+}
+
+.image-content img {
+    width: 4000%;
+    max-width: 900px; /* Limite la largeur maximale */
+    height: 700px; /* Maintient les proportions */
+    border: none; /* Supprime tout contour */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .console-content {
+        flex-direction: column; /* Empile le texte et l'image */
+        text-align: center; /* Centre le texte */
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .image-content img {
+        max-width: 100%;
+    }
+}

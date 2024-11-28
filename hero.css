@@ -1,0 +1,53 @@
+.hero-section {
+    background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/fedda57d7bd05538e8e7b2903ddc1c65f1440575-3440x1020.jpg?auto=format&fit=fill&q=80&h=800'); /* Remplacez cette URL par votre propre image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Centre le contenu verticalement */
+    height: 75vh; /* Utilise la hauteur complète de la fenêtre */
+}
+
+/* Conteneur pour le texte */
+.hero-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne le texte à gauche */
+    gap: 20px; /* Espace entre les éléments */
+    max-width: 600px; /* Limite la largeur du contenu */
+    width: 100%; /* Remplie la largeur disponible */
+}
+
+/* Style pour le titre (h1), le paragraphe (p) et le bouton (a) */
+.hero-section h1, .hero-section p, .hero-section a {
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.hero-section h1 {
+    font-size: 5.5em; /* Augmente la taille du titre (vous pouvez ajuster cette valeur) */
+    margin: 0;
+    letter-spacing: -5px;
+    width: 100%;
+}
+
+
+/* Bouton d'appel à l'action */
+.cta-button {
+    display: inline-block;
+    padding: 25px 30px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}

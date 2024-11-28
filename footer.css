@@ -1,0 +1,71 @@
+/* Footer Principal */
+footer {
+    background-color: #000000; /* Fond sombre, similaire à celui du site Valorant */
+    color: #fff; /* Texte en blanc */
+    padding: 40px 0; /* Un padding plus grand pour plus d'espace */
+    text-align: center; /* Centrage du texte */
+    font-size: 0.875rem; /* Taille de texte plus petite */
+}
+
+/* Container pour le footer */
+footer .footer-container {
+    display: flex; /* Utilisation de flexbox pour organiser les éléments */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    align-items: center; /* Centrage vertical */
+    flex-wrap: wrap; /* Permet de passer à la ligne sur les petits écrans */
+    margin-bottom: 20px; /* Espace sous la section des liens */
+}
+
+/* Section des liens du footer */
+footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espacement entre les liens */
+}
+
+footer .footer-links a {
+    color: #ccc; /* Liens en gris clair */
+    text-decoration: none; /* Retirer le soulignement */
+    transition: color 0.3s ease; /* Animation sur le survol */
+}
+
+footer .footer-links a:hover {
+    color: #ff4655; /* Changer la couleur au survol */
+}
+
+/* Section des réseaux sociaux */
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-links a {
+    color: #ccc;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #ff4655;
+}
+
+/* Copyright */
+footer .copyright {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+/* Responsiveness: ajuster l'affichage pour les petits écrans */
+@media (max-width: 768px) {
+    footer .footer-container {
+        flex-direction: column; /* Colonne pour les petits écrans */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    footer .footer-links {
+        margin-bottom: 20px; /* Espacement entre les sections */
+    }
+}

@@ -1,0 +1,159 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1450px;
+    width: 100%;
+}
+
+
+.video-wrapper {
+    flex: 1;
+}
+
+.video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.text-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-wrapper h1 {
+    font-size: 2em;
+    color: #29242d;
+}
+
+.text-wrapper p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.text-wrapper h2 {
+    font-size: 1.2em;
+    color: #29242d;
+}
+
+.text-wrapper button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #ff4655;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.text-wrapper button:hover {
+    background-color: #ff6577;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video, .text-wrapper {
+        width: 100%;
+    }
+}
+
+
+/* Conteneur pour aligner texte et image côte à côte */
+.container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(255, 70, 85);
+}
+
+/* Texte aligné à gauche */
+.text-wrapper-right {
+    width: 50%; /* Largeur du conteneur texte */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Aligne le texte à gauche */
+    gap: 20px;
+}
+
+/* Titre et paragraphe */
+.container2 .text-wrapper-right h1,
+.container2 .text-wrapper-right p {
+    text-align: left;
+    width: 100%; /* Même largeur pour <h1> et <p> */
+    margin: 0;
+    color: #fff;
+}
+
+.container2 .text-wrapper-right h1 {
+    font-size: 4rem;
+}
+
+.container2 .text-wrapper-right p {
+    line-height: 1.6;
+}
+
+/* Bouton */
+.text-wrapper-right button {
+    padding: 25px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-direction: row;
+}
+
+/* Effet de survol du bouton */
+.text-wrapper-right button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Image à gauche */
+.image-wrapper-left {
+    width: 50%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-wrapper-right, .image-wrapper-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image {
+        width: 80%;
+        margin-top: 20px;
+    }
+}

@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;  /* Choix de la couleur de fond globale */
+    background-color: #1e1e1e;  /* Choix de la couleur de fond globale */
     color: #ffffff;
     min-height: 100vh;
 }
@@ -37,6 +37,7 @@ main {
 }
 
 /* Navigation */
+
 
 nav ul {
     list-style: none;
@@ -80,7 +81,7 @@ nav a:hover {
     display: none;
     position: absolute;
     background-color: #333;
-    min-width: 160px;
+    min-width: 130px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     top: 100%;
@@ -126,37 +127,6 @@ nav a:hover {
         min-width: 100%;
     }
 }
-
-nav .search-form {
-    display: flex;
-    align-items: center;
-}
-
-nav .search-input {
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    width: 200px;
-    margin-left: 20px;
-}
-
-nav .search-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-nav .search-button i {
-    color: white;
-    font-size: 20px; /* Taille de l'icône */
-}
-
-nav .search-input:focus {
-    outline: none;
-    border: 2px solid #ff4655;
-}
-
 
 /* Grille des personnages */
 .characters-grid {
@@ -216,13 +186,12 @@ nav .search-input:focus {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
 }
-
 /* Footer */
 footer {
-    background-color: #000000;
+    background-color: #333;
     text-align: center;
     padding: 15px;
-    color: #ffffff; 
+    color: #ccc; 
     font-size: 0.9em;
 }
 
